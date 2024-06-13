@@ -12,8 +12,6 @@
 
 ## https://www.scribbr.com/statistics/linear-regression-in-r/
 
-## 
-
 
 # ---------------- Importing Dataset -----------------------
 
@@ -37,4 +35,41 @@ library(ggplot2)
 library(dplyr)
 library(broom)
 library(ggpubr)
+
+## Run a summary of your data to ensure it is what you are expecting
+summary(data)
+
+# Your output SHOULD match mine: 
+#           X             income        happiness    
+#Min.   :  1.0   Min.   :1.506   Min.   :0.266  
+#1st Qu.:125.2   1st Qu.:3.006   1st Qu.:2.266  
+#Median :249.5   Median :4.424   Median :3.473  
+#Mean   :249.5   Mean   :4.467   Mean   :3.393  
+#3rd Qu.:373.8   3rd Qu.:5.992   3rd Qu.:4.503  
+#Max.   :498.0   Max.   :7.482   Max.   :6.863  
+
+## Check data to understand compliance with analysis assumptions 
+# 1. Independence of Observation (aka no autocorrelaation)
+
+# 2. Normality 
+hist(data$happiness)
+# If assumption is met: observations should be roughly normally
+# distributed 
+
+# 3. Linearity 
+plot(happiness ~ income, data = data)
+# If assumption is met: observations should be a roughly linear
+# scatterplot output. 
+
+# 4. Homogeneity of variance (we will address this later)
+
+ß
+
+
+
+
+
+
+
+
 
