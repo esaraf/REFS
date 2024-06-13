@@ -63,10 +63,30 @@ plot(happiness ~ income, data = data)
 
 # 4. Homogeneity of variance (we will address this later)
 
-ß
+## Is there a linear relationship between income and happinesss?
 
+income.happiness.lm <- lm(happiness ~ income, data=data)
+summary(income.happiness.lm)
 
+# Call:
+# lm(formula = happiness ~ income, data = data)
+#
+# Residuals:
+#   Min       1Q   Median       3Q      Max 
+# -2.02479 -0.48526  0.04078  0.45898  2.37805 
+#
+# Coefficients:
+#             Estimate    Std. Error t value Pr(>|t|)    
+# (Intercept)  0.20427    0.08884   2.299   0.0219 *  
+# income       0.71383    0.01854  38.505   <2e-16 ***
+#  ---
+#  Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+#
+# Residual standard error: 0.7181 on 496 degrees of freedom
+# Multiple R-squared:  0.7493,	Adjusted R-squared:  0.7488 
+# F-statistic:  1483 on 1 and 496 DF,  p-value: < 2.2e-16
 
+## Commit Final Changes & Start a Pull Request
 
 
 
