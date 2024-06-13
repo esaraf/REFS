@@ -23,5 +23,18 @@ data <- read.csv("/Users/elizabethsaraf/Code/GitHub/REFS/REFS/income.data.csv")
 
 head(data)
 
-## Commit changes 
+## Commit & Push changes with message!
+
+##Install packages that you need for the analysis (you only need to
+## do this once)
+
+# install.packages("ggplot2)
+# install.packages("dplyr)
+# install.packages("broom)
+# install.packages("ggpubr)
+
+library(ggplot2)
+library(dplyr)
+library(broom)
+library(ggpubr)
 
