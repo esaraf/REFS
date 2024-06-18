@@ -152,14 +152,4 @@ abline(lm(happiness~income))
 x <- seq(min(income),max(happiness), l=1000)
 y <- predict(lm(happiness~income), data.frame(income=x), interval='c')
 matlines(x,y,lty=2,col=1)
-
-
-
-
-
-
-
-
-
-
 ldataset <- read.csv("")
