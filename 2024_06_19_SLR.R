@@ -1,5 +1,8 @@
 ### Simple Linear Regression 
 
+
+
+
 ## Objective: Connect GitHub repository to your local machine.
 
 ## Background context: This tutorial is only about getting
